@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas - IA Hoy</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+  .card {
+    background: #1e293b;
+    border-radius: 28px;
+    padding: 40px;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 24px;
+  }
+  .card-content {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+  }
+  .card-text { flex: 1; }
+  .card-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #064e3b;
+    color: #34d399;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .card h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  .card p:not(.card-tag) {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0 0 16px 0;
+  }
+  .card-logo-box {
+    width: 45%;
+    min-width: 350px;
+    background: #0f172a;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    align-self: stretch;
+    overflow: hidden;
+  }
+  .card-logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+  }
+  .tag-icon { font-size: 1.2rem; }
+  @media (max-width: 800px) {
+    .card-content { flex-direction: column; }
+    .card-logo-box { width: 100%; min-width: auto; height: 300px; margin-top: 32px; }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <div class="header-icono">🤖</div>
+    <div>
+      <h1>IA Hoy</h1>
+      <p>Portal educativo sobre Inteligencia Artificial · Educación Media · El Salvador</p>
+    </div>
+  </header>
+
+  <!-- ==================== NAV ==================== -->
+  <nav>
+    <a href="main.html">Inicio</a>
+    <a href="Noticias.html">Noticias</a>
+    <a href="Herramientas.html" class="activo">Herramientas</a>
+    <a href="Tutoriales.html">Tutoriales</a>
+    <a href="Glosario.html">Glosario</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="#" class="btn-especial">🚀 Explorar IA</a>
+  </nav>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <div class="contenedor">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <span class="hero-badge">🛠️ HERRAMIENTAS 2025</span>
+      <h2>Las mejores <span>herramientas de IA</span><br />para cada necesidad</h2>
+      <p>Descubrí las aplicaciones de inteligencia artificial más populares y útiles para crear contenido, programar, diseñar, investigar y mucho más.</p>
+    </section>
+
+    <!-- MAIN: artículos principales -->
+    <main>
+
+      <!-- HERRAMIENTA 1: ChatGPT -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">💬</span> Chatbots y Asistentes</p>
+            <h3>ChatGPT</h3>
+            <p>El chatbot más popular del mundo, desarrollado por OpenAI. Puede responder preguntas, escribir código, crear contenido, analizar datos y mantener conversaciones naturales en múltiples idiomas.</p>
+            <ul class="card-lista">
+              <li>Versión gratuita disponible</li>
+              <li>Modelo GPT-4 en versión Plus</li>
+              <li>Extensión con plugins y GPTs personalizados</li>
+              <li>Aplicaciones para web, iOS y Android</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/960px-ChatGPT_logo.svg.png" alt="ChatGPT Logo">
+          </div>
+        </div>
+      </article>
+    
+      <!-- Midjourney -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🎨</span> Generación de Imágenes</p>
+            <h3>Midjourney</h3>
+            <p>Herramienta líder en creación de imágenes artísticas a partir de descripciones textuales. Produce resultados de
+              alta calidad con estilos únicos y detalles impresionantes.</p>
+            <ul class="card-lista">
+              <li>Funciona a través de Discord</li>
+              <li>Excelente para arte conceptual</li>
+              <li>Múltiples estilos y parámetros</li>
+              <li>Plan desde $10/mes</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/www.aigantic.com/e61b14a8201ad81a572837dcec4e4d282a1ba95d.jpg"
+              alt="Midjourney Logo">
+          </div>
+        </div>
+      </article>
+
+      <!-- HERRAMIENTA 3: GitHub Copilot -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">💻</span> Programación</p>
+            <h3>GitHub Copilot</h3>
+            <p>Asistente de programación impulsado por IA que sugiere código en tiempo real mientras escribes. Compatible con Visual Studio Code y otros editores populares.</p>
+            <ul class="card-lista">
+              <li>Soporte para 30+ lenguajes de programación</li>
+              <li>Autocompletado inteligente de código</li>
+              <li>Generación de funciones completas</li>
+              <li>Gratis para estudiantes y open source</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://img.icons8.com/fluent/1200/github-copilot.jpg" alt="GitHub Copilot">
+          </div>
+        </div>
+      </article>
+
+      <!-- HERRAMIENTA 4: Runway ML -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🎬</span> Video y Multimedia</p>
+            <h3>Runway ML</h3>
+            <p>Plataforma creativa que permite editar video, generar imágenes y aplicar efectos especiales usando inteligencia artificial. Ideal para creadores de contenido.</p>
+            <ul class="card-lista">
+              <li>Generación de video desde texto</li>
+              <li>Eliminación de fondo automática</li>
+              <li>Inpainting y outpainting de video</li>
+              <li>Plan gratuito disponible</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/runwayml.com/e3e6491600eb20edc33d886cdd59946ef9cb18b7.png" alt="Runway ML">
+          </div>
+        </div>
+      </article>
+
+      <!-- HERRAMIENTA 5: Suno AI -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🎵</span> Música y Audio</p>
+            <h3>Suno AI</h3>
+            <p>Crea canciones completas con letra, melodía y voz a partir de una simple descripción. Puede generar música en diferentes géneros y estilos.</p>
+            <ul class="card-lista">
+              <li>Generación de canciones de hasta 4 minutos</li>
+              <li>Múltiples géneros musicales</li>
+              <li>Voces sintetizadas realistas</li>
+              <li>Créditos gratuitos diarios</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/play-lh.googleusercontent.com/ecbf1f125c07f11403ee585f860186c01db2cf1c" alt="Suno AI">
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ASIDE: contenido lateral -->
+    <aside>
+
+      <div class="aside-card">
+        <h4>📊 Comparativa Rápida</h4>
+        <div class="stat-item">
+          <span class="stat-label">ChatGPT vs Gemini</span>
+          <span class="stat-valor">Ver comparación</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Midjourney vs DALL-E</span>
+          <span class="stat-valor">Ver comparación</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Copilot vs CodeWhisperer</span>
+          <span class="stat-valor">Ver comparación</span>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h4>⭐ Herramientas Gratuitas</h4>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🆓</span>
+          <div>
+            <div class="herramienta-nombre">Claude (Anthropic)</div>
+            <div class="herramienta-desc">Chatbot con gran capacidad de contexto</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🆓</span>
+          <div>
+            <div class="herramienta-nombre">Leonardo.ai</div>
+            <div class="herramienta-desc">Generación de imágenes gratuita</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🆓</span>
+          <div>
+            <div class="herramienta-nombre">Canva AI</div>
+            <div class="herramienta-desc">Diseño con funciones de IA</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🆓</span>
+          <div>
+            <div class="herramienta-nombre">Perplexity</div>
+            <div class="herramienta-desc">Buscador con respuestas de IA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h4>💡 Consejo Pro</h4>
+        <span class="dato-desc">Muchas herramientas ofrecen planes gratuitos para estudiantes. Verifica si tu institución educativa tiene convenios con estas plataformas.</span>
+      </div>
+
+    </aside>
+
+  </div><!-- fin .contenedor -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-marca">
+      🤖 IA Hoy
+      <span>Recurso educativo para estudiantes de desarrollo de software · El Salvador</span>
+    </div>
+    <nav class="footer-links">
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Recursos</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 IA Hoy · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

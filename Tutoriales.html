@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales - IA Hoy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  .card {
+    background: #1e293b;
+    border-radius: 28px;
+    padding: 40px;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 24px;
+  }
+
+  .card-content {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .card-text {
+    flex: 1;
+  }
+
+  .card-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #064e3b;
+    color: #34d399;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  .card p:not(.card-tag) {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0 0 16px 0;
+  }
+
+  .card-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-lista li {
+    color: #94a3b8;
+    font-size: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #1e3a5f;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .card-lista li:last-child { border-bottom: none; }
+
+  .card-lista li::before {
+    content: '▸';
+    color: #34d399;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  /* Caja del logo - casi la mitad de la tarjeta */
+  .card-logo-box {
+    width: 45%;
+    min-width: 350px;
+    background: #0f172a;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    align-self: stretch;
+    overflow: hidden;
+  }
+
+  .card-logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+  }
+
+  /* Icono en el tag */
+  .tag-icon {
+    font-size: 1.2rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .card-content {
+      flex-direction: column;
+    }
+    
+    .card-logo-box {
+      width: 100%;
+      min-width: auto;
+      height: 300px;
+      margin-top: 32px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <div class="header-icono">🤖</div>
+    <div>
+      <h1>IA Hoy</h1>
+      <p>Portal educativo sobre Inteligencia Artificial · Educación Media · El Salvador</p>
+    </div>
+  </header>
+
+  <!-- ==================== NAV ==================== -->
+  <nav>
+    <a href="main.html">Inicio</a>
+    <a href="Noticias.html">Noticias</a>
+    <a href="Herramientas.html">Herramientas</a>
+    <a href="Tutoriales.html" class="activo">Tutoriales</a>
+    <a href="Glosario.html">Glosario</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="#" class="btn-especial">🚀 Explorar IA</a>
+  </nav>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <div class="contenedor">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <span class="hero-badge">📚 TUTORIALES 2025</span>
+      <h2>Aprende a usar la <span>IA paso a paso</span></h2>
+      <p>Guías prácticas y tutoriales para dominar las herramientas de inteligencia artificial, desde lo básico hasta técnicas avanzadas.</p>
+    </section>
+
+    <!-- MAIN: artículos principales -->
+    <main>
+
+      <!-- Tutorial 1: Prompts -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🌱</span> Principiantes</p>
+            <h3>Cómo escribir prompts efectivos</h3>
+            <p>Aprende a comunicarte con la IA de manera clara y precisa para obtener mejores resultados. Un buen prompt puede marcar la diferencia entre una respuesta mediocre y una excelente.</p>
+            <ul class="card-lista">
+              <li>Sé específico en tus solicitudes</li>
+              <li>Proporciona contexto relevante</li>
+              <li>Usa ejemplos para ilustrar lo que necesitas</li>
+              <li>Itera y refina tus prompts</li>
+              <li>Especifica el formato de salida deseado</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/curator-production.s3.us.cloud-object-storage.appdomain.cloud/f6034ae38a82637950200cb2f0769963b6260381.jpeg" alt="Prompt Engineering">
+          </div>
+        </div>
+      </article>
+
+      <!-- Tutorial 2: Midjourney -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">📈</span> Intermedio</p>
+            <h3>Crear imágenes con Midjourney: Guía completa</h3>
+            <p>Domina la creación de imágenes impresionantes usando Midjourney. Desde los comandos básicos hasta parámetros avanzados para controlar el estilo y la composición.</p>
+            <ul class="card-lista">
+              <li>Estructura básica de un prompt en Midjourney</li>
+              <li>Parámetros: --ar, --style, --chaos, --stylize</li>
+              <li>Uso de imágenes de referencia</li>
+              <li>Técnicas de inpainting y variaciones</li>
+              <li>Combinar múltiples conceptos en una imagen</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/www.aigantic.com/e61b14a8201ad81a572837dcec4e4d282a1ba95d.jpg" alt="Midjourney Tutorial">
+          </div>
+        </div>
+      </article>
+
+      <!-- Tutorial 3: GitHub Copilot -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">💻</span> Programación</p>
+            <h3>Programar más rápido con GitHub Copilot</h3>
+            <p>Maximiza tu productividad como desarrollador usando Copilot de manera efectiva. Aprende a escribir comentarios que generen el código que necesitas.</p>
+            <ul class="card-lista">
+              <li>Configuración inicial en VS Code</li>
+              <li>Escribir comentarios descriptivos</li>
+              <li>Aceptar, rechazar o modificar sugerencias</li>
+              <li>Generar tests automáticamente</li>
+              <li>Documentar código con ayuda de IA</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/chriskirby.net/28e76489edb3938040f45de2a576d00b67220488.png" alt="GitHub Copilot Programming">
+          </div>
+        </div>
+      </article>
+
+      <!-- Tutorial 4: API OpenAI -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🚀</span> Avanzado</p>
+            <h3>Construir un chatbot con la API de OpenAI</h3>
+            <p>Aprende a integrar modelos de lenguaje en tus propias aplicaciones usando Python y la API de OpenAI. Crea
+              chatbots personalizados para diferentes casos de uso.</p>
+            <ul class="card-lista">
+              <li>Configurar tu entorno de desarrollo</li>
+              <li>Obtener y usar tu API key</li>
+              <li>Manejar el contexto de conversación</li>
+              <li>Controlar tokens y costos</li>
+              <li>Implementar streaming de respuestas</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/cloud-authority.com/ac281886dd7b340204836d4656e99a5b73da3527"
+              alt="OpenAI API Python Tutorial">
+          </div>
+        </div>
+      </article>
+
+      <!-- Tutorial 5: Automatización -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">⚡</span> Productividad</p>
+            <h3>Automatizar tareas con IA</h3>
+            <p>Descubre cómo la IA puede ayudarte a automatizar tareas repetitivas en tu trabajo diario, desde responder emails hasta generar reportes y analizar datos.</p>
+            <ul class="card-lista">
+              <li>Automatización de respuestas de correo</li>
+              <li>Generación de reportes automáticos</li>
+              <li>Resumen de documentos largos</li>
+              <li>Traducción y localización de contenido</li>
+              <li>Integración con herramientas como Zapier</li>
+            </ul>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/images.stockcake.com/7b27a6c930216a7045b200b44c8fe479cefcd0d6.jpg" alt="AI Automation">
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ASIDE: contenido lateral -->
+    <aside>
+
+      <div class="aside-card">
+        <h4>📊 Niveles de Dificultad</h4>
+        <div class="stat-item">
+          <span class="stat-label">Principiante</span>
+          <span class="stat-valor">8 tutoriales</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Intermedio</span>
+          <span class="stat-valor">12 tutoriales</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Avanzado</span>
+          <span class="stat-valor">6 tutoriales</span>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h4>🎯 Tutoriales Populares</h4>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🔥</span>
+          <div>
+            <div class="herramienta-nombre">ChatGPT para Estudiantes</div>
+            <div class="herramienta-desc">2.5K visualizaciones</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🔥</span>
+          <div>
+            <div class="herramienta-nombre">Crear un CV con IA</div>
+            <div class="herramienta-desc">1.8K visualizaciones</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🔥</span>
+          <div>
+            <div class="herramienta-nombre">Prompt Engineering 101</div>
+            <div class="herramienta-desc">1.2K visualizaciones</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h4>💡 Recursos Adicionales</h4>
+        <span class="dato-desc">Todos nuestros tutoriales incluyen ejemplos de código, archivos de práctica y ejercicios para reforzar lo aprendido.</span>
+      </div>
+
+    </aside>
+
+  </div><!-- fin .contenedor -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-marca">
+      🤖 IA Hoy
+      <span>Recurso educativo para estudiantes de desarrollo de software · El Salvador</span>
+    </div>
+    <nav class="footer-links">
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Recursos</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 IA Hoy · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

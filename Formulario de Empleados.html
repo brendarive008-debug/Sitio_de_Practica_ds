@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingreso de Datos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <div class="header-icono">🤖</div>
+    <div>
+      <h1>IA Hoy</h1>
+      <p>Portal de Ingreso de Datos· El Salvador</p>
+    </div>
+  </header>
+
+  <!-- ==================== NAV ==================== -->
+  <nav>
+    <a href="main.html">Inicio</a>
+    <a href="Noticias.html">Noticias</a>
+    <a href="Herramientas.html">Herramientas</a>
+    <a href="Tutoriales.html">Tutoriales</a>
+    <a href="Glosario.html">Glosario</a>
+    <a href="formulario.html" class="activo">Formulario</a>
+    <a href="#" class="btn-especial">🚀 Explorar IA</a>
+  </nav>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <div class="contenedor">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <span class="hero-badge">📧 Ingreso de Información</span>
+      <h2>Ferreteria Virginia<span> </span></h2>
+      <p>A través de este formulario se ingresara los datos persnales para aplicar al trabajo.</p>
+    </section>
+
+    <!-- MAIN: Formulario -->
+    <main>
+
+      <article class="card">
+        <p class="card-tag">FORMULARIO</p>
+        <h2>Ingreso de Datos Personales</h2>
+
+        <form action="" method="post" style="display: flex; flex-direction: column; gap: 20px;">
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Nombre </label>
+            <input type="text" name="txtnombre" id="nombre" placeholder="Escribe nombre" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Apellidos</label>
+            <input type="text" name="txtapellidos" id="apellidos" placeholder="Escribe apellidos" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Sexo</label>
+            <select name="sexo" id="sexo" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; cursor: pointer;">
+              <option value="">Seleccione su sexo</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+              <option value="prefiero_no_decir">Prefiero no decir</option>
+            </select>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Edad</label>
+            <input type="number" name="edad" id="edad" placeholder="Escribe tu edad (ej: 25)" min="18" max="70" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">DUI</label>
+            <input type="text" name="DUI" id="DUI" placeholder="Escribe tu numero de DUI" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Fecha de Nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Estado Civil</label>
+            <select name="estado_civil" id="estado_civil" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; cursor: pointer;">
+              <option value="">Seleccione una opción</option>
+              <option value="soltero">Soltero/a</option>
+              <option value="casado">Casado/a</option>
+              <option value="divorciado">Divorciado/a</option>
+              <option value="viudo">Viudo/a</option>
+              <option value="union_libre">Unión Libre</option>
+            </select>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Telefono</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Escribe tu numero de telefono" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Email</label>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Dirección de Residencia</label>
+            <input type="text" name="txtdirección" id="dirección" placeholder="Escribe su Dirección de Residencia"
+              required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Municipio</label>
+            <select name="municipio" id="municipio" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; cursor: pointer;">
+              <option value="">Seleccione su municipio</option>
+              <option value="san_salvador">San Salvador</option>
+              <option value="santa_tecla">Santa Tecla</option>
+              <option value="soyapango">Soyapango</option>
+              <option value="san_miguel">San Miguel</option>
+              <option value="santa_ana">Santa Ana</option>
+              <option value="la_libertad">La Libertad</option>
+              <option value="usulutan">Usulután</option>
+              <option value="sonsonate">Sonsonate</option>
+              <option value="la_union">La Unión</option>
+              <option value="ahuachapan">Ahuachapán</option>
+              <option value="chalatenango">Chalatenango</option>
+              <option value="cuscatlan">Cuscatlán</option>
+              <option value="la_paz">La Paz</option>
+              <option value="morazan">Morazán</option>
+              <option value="san_vicente">San Vicente</option>
+            </select>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Mensaje</label>
+            <textarea name="txtmensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; resize: vertical;"></textarea>
+          </div>
+
+          <h2>Información Laboral y Educación</h2>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Nivel educativo</label>
+            <select name="nivel_educativo" id="nivel_educativo" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; cursor: pointer;">
+              <option value="">Seleccione su nivel educativo</option>
+              <option value="primaria">Primaria</option>
+              <option value="secundaria">Secundaria</option>
+              <option value="bachillerato">Bachillerato General</option>
+              <option value="tecnico">Bachillerato Técnico</option>
+              <option value="tecnico_superior">Técnico Superior</option>
+              <option value="universitario">Universitario (En curso)</option>
+              <option value="licenciatura">Licenciatura</option>
+              <option value="posgrado">Posgrado</option>
+            </select>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Puesto al que aplica</label>
+            <select name="puesto" id="puesto" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; cursor: pointer;">
+              <option value="">Seleccione el puesto deseado</option>
+              <option value="vendedor">Vendedor/a</option>
+              <option value="cajero">Cajero/a</option>
+              <option value="bodega">Auxiliar de Bodega/Almacén</option>
+              <option value="repartidor">Repartidor/Delivery</option>
+              <option value="atencion_cliente">Atención al Cliente</option>
+              <option value="auxiliar_general">Auxiliar General</option>
+            </select>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Disponibilidad de Horario</label>
+            <select name="disponibilidad" id="disponibilidad" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; cursor: pointer;">
+              <option value="">Seleccione su disponibilidad</option>
+              <option value="tiempo_completo">Tiempo Completo (8 horas)</option>
+              <option value="medio_tiempo">Medio Tiempo (4-6 horas)</option>
+              <option value="matutino">Turno Matutino</option>
+              <option value="vespertino">Turno Vespertino</option>
+              <option value="mixto">Horario Mixto</option>
+              <option value="fines_semana">Fines de Semana</option>
+            </select>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">¿Tiene experiencia en ferretería?</label>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="experiencia_ferreteria" value="si" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Sí
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="experiencia_ferreteria" value="no" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">¿Qué tipo de licencia de conducir posee? (Puede seleccionar varias)</label>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="licencias[]" value="motocicleta" 
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Licencia de Motocicleta (Particular)
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="licencias[]" value="liviana" 
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Licencia Vehículo Liviano (Particular)
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="licencias[]" value="pesada" 
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Licencia Vehículo Pesado
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="licencias[]" value="taxi" 
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Licencia de Taxi
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="licencias[]" value="no_tiene" 
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                No tengo licencia de conducir
+              </label>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Habilidades Específicas (Seleccione las que aplique)</label>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="herramientas_manuales"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Manejo de herramientas manuales
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="herramientas_electricas"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Manejo de herramientas eléctricas
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="atencion_cliente"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Atención al cliente
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="caja_registradora"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Manejo de caja registradora
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="inventarios"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Control de inventarios
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="conocimientos_plomeria"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Conocimientos de plomería básica
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="conocimientos_electricidad"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Conocimientos de electricidad básica
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="habilidades[]" value="conocimientos_construccion"
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Conocimientos de construcción
+              </label>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Manejo de Herramientas Tecnologicas</label>
+            <input type="text" name="tecnologia" id="tecnologia" placeholder="Escribe tus habilidades (manejo de computadoras, programas, etc)" required
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">¿Está dispuesto a trabajar fines de semana y días festivos?</label>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="dispuesto_festivos" value="si" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Sí
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="dispuesto_festivos" value="no" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">¿Puede realizar actividades físicas? (cargar peso, estar de pie por largos periodos)</label>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="actividades_fisicas" value="si" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Sí
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="actividades_fisicas" value="no" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                No
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="actividades_fisicas" value="con_restricciones" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Con algunas restricciones
+              </label>
+            </div>
+          </div>
+
+          <h2>Documentación Legal</h2>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">¿Cuenta con solvencia de la Policía Nacional Civil (PNC)?</label>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="solvencia_pnc" value="si_actualizada" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Sí, actualizada (menos de 3 meses)
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="solvencia_pnc" value="si_vencida" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                Sí, pero está vencida
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="solvencia_pnc" value="no_tiene" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                No tengo
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="radio" name="solvencia_pnc" value="en_tramite" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer;">
+                  En trámite
+              </label>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Observaciones sobre antecedentes penales</label>
+            <textarea name="antecedentes_obs" id="antecedentes_obs" rows="3" placeholder="Si tiene algún antecedente penal o situación legal que deba mencionar, descríbalo aquí..."
+              style="background: var(--color-fondo); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 14px 18px; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem; resize: vertical;"></textarea>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--color-suave); font-size: 0.9rem;">Acepto los términos y condiciones</label>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="terminos" value="acepto_privacidad" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer; margin-top: 2px;">
+                Acepto el tratamiento de mis datos personales conforme al aviso de privacidad
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="veracidad" value="declaro_verdad" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer; margin-top: 2px;">
+                Declaro que la información proporcionada es verídica
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer; color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 0.95rem;">
+                <input type="checkbox" name="autorizacion_pnc" value="autorizo_verificacion" required
+                  style="width: 18px; height: 18px; accent-color: var(--color-acento); cursor: pointer; margin-top: 2px;">
+                Autorizo a la empresa verificar mis antecedentes penales ante la PNC
+              </label>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 16px; margin-top: 10px;">
+            <button type="submit"
+              style="flex: 1; background: linear-gradient(90deg, var(--color-acento), var(--color-acento2)); color: #fff; border: none; border-radius: 30px; padding: 12px 24px; font-family: var(--fuente-titulo); font-weight: 700; cursor: pointer; transition: opacity 0.3s;">
+              Enviar
+            </button>
+            <button type="reset"
+              style="flex: 1; background: transparent; color: var(--color-suave); border: 1px solid var(--color-borde); border-radius: 30px; padding: 12px 24px; font-family: var(--fuente-titulo); cursor: pointer; transition: all 0.3s;">
+              Limpiar
+            </button>
+          </div>
+
+        </form>
+      </article>
+
+    </main>
+
+    <!-- ASIDE: contenido lateral -->
+    <aside>
+
+      <div class="aside-card">
+        <h4>📧 Info de Contacto</h4>
+        <div class="stat-item">
+          <span class="stat-label">Email</span>
+          <span class="stat-valor">inju2026@gmail.com</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Horario</span>
+          <span class="stat-valor">Lun-Vie 7:00am-5:00pm</span>
+        </div>
+      </div>
+
+      <!-- SECCIÓN DE RECOMENDACIONES -->
+      <div class="aside-card" style="margin-top: 20px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(157, 0, 255, 0.1) 100%); border: 1px solid var(--color-borde);">
+        <h4>💡 Recomendaciones Importantes</h4>
+        
+        <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 15px;">
+          
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid var(--color-acento);">
+            <span style="font-size: 1.2rem;">📝</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Verifica tus datos</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Asegúrate de que tu DUI, teléfono y correo estén escritos correctamente.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid var(--color-acento2);">
+            <span style="font-size: 1.2rem;">📄</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Documentos listos</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Ten a mano tu DUI actualizado y algún comprobante de domicilio.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #ff6b6b;">
+            <span style="font-size: 1.2rem;">⏰</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Horario flexible</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Mientras más disponibilidad de horario tengas, mayores son tus oportunidades.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #4ecdc4;">
+            <span style="font-size: 1.2rem;">🎯</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Sé específico</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">En habilidades, menciona herramientas específicas que sepas manejar.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #ffe66d;">
+            <span style="font-size: 1.2rem;">📞</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Mantente disponible</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Te contactaremos por teléfono o correo en los próximos 3-5 días hábiles.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #9d00ff;">
+            <span style="font-size: 1.2rem;">🚔</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Solvencia PNC</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Si no tienes solvencia, puedes tramitarla en el sitio web de la PNC o en sus oficinas. Es requisito indispensable.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #00d4ff;">
+            <span style="font-size: 1.2rem;">✅</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Honestidad primero</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Sé truthful con tu información. La empresa verificará tus antecedentes.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #ff9f43;">
+            <span style="font-size: 1.2rem;">🎂</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Edad mínima</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Debes ser mayor de 18 años para aplicar. Verifica que tu fecha de nacimiento coincida con tu DUI.</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: var(--color-fondo); border-radius: var(--radio); border-left: 3px solid #10ac84;">
+            <span style="font-size: 1.2rem;">🚗</span>
+            <div>
+              <strong style="color: var(--color-texto); font-size: 0.9rem; display: block; margin-bottom: 4px;">Múltiples licencias</strong>
+              <span style="color: var(--color-suave); font-size: 0.85rem; line-height: 1.4;">Si tienes más de un tipo de licencia, selecciona todas las que apliquen. Esto puede aumentar tus oportunidades.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECCIÓN DE TIPS ADICIONALES -->
+      <div class="aside-card" style="margin-top: 20px;">
+        <h4>🚀 Tips para destacar</h4>
+        
+        <div style="margin-top: 15px;">
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: center; gap: 10px; color: var(--color-texto); font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--color-borde);">
+              <span style="color: var(--color-acento); font-weight: bold;">✓</span>
+              Menciona experiencia previa en ventas
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; color: var(--color-texto); font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--color-borde);">
+              <span style="color: var(--color-acento); font-weight: bold;">✓</span>
+              Destaca tus conocimientos técnicos
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; color: var(--color-texto); font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--color-borde);">
+              <span style="color: var(--color-acento); font-weight: bold;">✓</span>
+              Indica si tienes vehículo propio
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; color: var(--color-texto); font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--color-borde);">
+              <span style="color: var(--color-acento); font-weight: bold;">✓</span>
+              Sé honesto con tu disponibilidad real
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; color: var(--color-texto); font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--color-borde);">
+              <span style="color: var(--color-acento); font-weight: bold;">✓</span>
+              Tramita tu solvencia PNC con anticipación
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; color: var(--color-texto); font-size: 0.9rem; padding: 8px 0;">
+              <span style="color: var(--color-acento); font-weight: bold;">✓</span>
+              Verifica que tu edad coincida con tus documentos
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SECCIÓN DE REQUISITOS -->
+      <div class="aside-card" style="margin-top: 20px; background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3);">
+        <h4 style="color: #ff6b6b;">📋 Requisitos Obligatorios</h4>
+        
+        <div style="margin-top: 15px;">
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: var(--color-fondo); border-radius: var(--radio);">
+              <span style="font-size: 1.1rem;">🎂</span>
+              <span style="color: var(--color-texto); font-size: 0.9rem;">Ser mayor de 18 años</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: var(--color-fondo); border-radius: var(--radio);">
+              <span style="font-size: 1.1rem;">🆔</span>
+              <span style="color: var(--color-texto); font-size: 0.9rem;">DUI vigente</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: var(--color-fondo); border-radius: var(--radio);">
+              <span style="font-size: 1.1rem;">🚔</span>
+              <span style="color: var(--color-texto); font-size: 0.9rem;">Solvencia de la PNC (actualizada)</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: var(--color-fondo); border-radius: var(--radio);">
+              <span style="font-size: 1.1rem;">🏠</span>
+              <span style="color: var(--color-texto); font-size: 0.9rem;">Comprobante de domicilio</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: var(--color-fondo); border-radius: var(--radio);">
+              <span style="font-size: 1.1rem;">📧</span>
+              <span style="color: var(--color-texto); font-size: 0.9rem;">Correo electrónico activo</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px; background: var(--color-fondo); border-radius: var(--radio);">
+              <span style="font-size: 1.1rem;">📱</span>
+              <span style="color: var(--color-texto); font-size: 0.9rem;">Teléfono de contacto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div><!-- fin .contenedor -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-marca">
+      🤖 IA Hoy
+      <span>Recurso educativo para estudiantes de desarrollo de software · El Salvador</span>
+    </div>
+    <nav class="footer-links">
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Recursos</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 IA Hoy · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+
+</html>

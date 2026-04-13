@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario - IA Hoy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  .card {
+    background: #1e293b;
+    border-radius: 28px;
+    padding: 40px;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 24px;
+  }
+
+  .card-content {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .card-text {
+    flex: 1;
+  }
+
+  .card-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #064e3b;
+    color: #34d399;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  .card p:not(.card-tag) {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  /* Caja del logo - casi la mitad de la tarjeta */
+  .card-logo-box {
+    width: 45%;
+    min-width: 350px;
+    background: #0f172a;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    align-self: stretch;
+    overflow: hidden;
+  }
+
+  .card-logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+  }
+
+  /* Icono en el tag */
+  .tag-icon {
+    font-size: 1.2rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .card-content {
+      flex-direction: column;
+    }
+    
+    .card-logo-box {
+      width: 100%;
+      min-width: auto;
+      height: 300px;
+      margin-top: 32px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <div class="header-icono">🤖</div>
+    <div>
+      <h1>IA Hoy</h1>
+      <p>Portal educativo sobre Inteligencia Artificial · Educación Media · El Salvador</p>
+    </div>
+  </header>
+
+  <!-- ==================== NAV ==================== -->
+  <nav>
+    <a href="main.html">Inicio</a>
+    <a href="Noticias.html">Noticias</a>
+    <a href="Herramientas.html">Herramientas</a>
+    <a href="Tutoriales.html">Tutoriales</a>
+    <a href="Glosario.html" class="activo">Glosario</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="#" class="btn-especial">🚀 Explorar IA</a>
+  </nav>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <div class="contenedor">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <span class="hero-badge">📖 GLOSARIO 2025</span>
+      <h2>Términos esenciales de <span>Inteligencia Artificial</span></h2>
+      <p>Un diccionario completo con los conceptos más importantes del mundo de la IA, explicados de manera sencilla y accesible.</p>
+    </section>
+
+    <!-- MAIN: artículos principales -->
+    <main>
+
+      <!-- IA General -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🧠</span> Conceptos Fundamentales</p>
+            <h3>Inteligencia Artificial (IA)</h3>
+            <p>Campo de la informática dedicado a crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de voz, la toma de decisiones, la traducción de idiomas y el reconocimiento visual.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/images.stockcake.com/7b27a6c930216a7045b200b44c8fe479cefcd0d6.jpg" alt="Inteligencia Artificial">
+          </div>
+        </div>
+      </article>
+
+      <!-- Machine Learning -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">📊</span> Conceptos Fundamentales</p>
+            <h3>Machine Learning (Aprendizaje Automático)</h3>
+            <p>Subcampo de la IA que permite a las computadoras aprender y mejorar automáticamente a partir de la experiencia sin ser programadas explícitamente. Utiliza algoritmos que identifican patrones en datos para hacer predicciones.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/miro.medium.com/1143a267d2064c909a1b692b0d491e4694e264b9.jpeg" alt="Machine Learning">
+          </div>
+        </div>
+      </article>
+
+      <!-- Deep Learning -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🔗</span> Redes Neuronales</p>
+            <h3>Deep Learning (Aprendizaje Profundo)</h3>
+            <p>Tipo de machine learning basado en redes neuronales artificiales con múltiples capas (de ahí "profundo"). Es especialmente efectivo para tareas complejas como el reconocimiento de imágenes, el procesamiento del lenguaje natural y la conducción autónoma.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/lamarr-institute.org/6448d2c9b43b9b6164cb432dfe4d6dff686edadf.png" alt="Deep Learning Neural Networks">
+          </div>
+        </div>
+      </article>
+
+      <!-- LLM -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">💬</span> Procesamiento de Lenguaje</p>
+            <h3>LLM (Large Language Model)</h3>
+            <p>Modelo de lenguaje grande entrenado con enormes cantidades de texto para comprender y generar lenguaje humano. Ejemplos incluyen GPT-4, Claude y Gemini. Pueden responder preguntas, escribir textos, traducir y más.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/01716fbac9a5e4a081522a23ccfdc470f012c8a5.png" alt="LLM Language Model">
+          </div>
+        </div>
+      </article>
+
+      <!-- Prompt -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">📝</span> Conceptos Fundamentales</p>
+            <h3>Prompt</h3>
+            <p>Instrucción o entrada que se le da a un modelo de IA para que genere una respuesta. Un prompt bien diseñado puede mejorar significativamente la calidad de los resultados obtenidos de herramientas como ChatGPT.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/curator-production.s3.us.cloud-object-storage.appdomain.cloud/f6034ae38a82637950200cb2f0769963b6260381.jpeg" alt="Prompt Engineering">
+          </div>
+        </div>
+      </article>
+
+      <!-- Sesgo Algorítmico -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">⚖️</span> Ética e IA</p>
+            <h3>Sesgo Algorítmico</h3>
+            <p>Prejuicio sistemático en los resultados de un algoritmo de IA, generalmente causado por datos de entrenamiento desbalanceados o sesgados. Es uno de los desafíos éticos más importantes en el desarrollo de sistemas de IA.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/i0.wp.com/94101f32de61ee243744d1cf98b8d62cd652f770.png" alt="AI Ethics Bias">
+          </div>
+        </div>
+      </article>
+
+      <!-- IA Generativa -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">✨</span> Generación de Contenido</p>
+            <h3>IA Generativa</h3>
+            <p>Tipo de inteligencia artificial capaz de crear nuevo contenido original, como texto, imágenes, música, video o código, aprendiendo patrones de datos existentes. ChatGPT, DALL-E y Midjourney son ejemplos populares.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/as2.ftcdn.net/d89afa8cfc5aa5bc06c37ffb51785cd34e7db28c.jpg" alt="Generative AI">
+          </div>
+        </div>
+      </article>
+
+      <!-- Token -->
+      <article class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <p class="card-tag"><span class="tag-icon">🔤</span> Conceptos Técnicos</p>
+            <h3>Token</h3>
+            <p>Unidad básica de texto que los modelos de lenguaje procesan. Puede ser una palabra, parte de una palabra o un carácter. Los modelos tienen límites de tokens que determinan cuánto texto pueden procesar o generar.</p>
+          </div>
+          <div class="card-logo-box">
+            <img src="https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/12d5cb1235d31a74309806e6902f40a52a023348.jpg" alt="AI Technical Concepts">
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ASIDE: contenido lateral -->
+    <aside>
+
+      <div class="aside-card">
+        <h4>🔤 Índice Alfabético</h4>
+        <div class="stat-item">
+          <span class="stat-label">A - D</span>
+          <span class="stat-valor">12 términos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">E - H</span>
+          <span class="stat-valor">8 términos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">I - L</span>
+          <span class="stat-valor">15 términos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">M - P</span>
+          <span class="stat-valor">10 términos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Q - Z</span>
+          <span class="stat-valor">9 términos</span>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h4>📚 Categorías</h4>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🧠</span>
+          <div>
+            <div class="herramienta-nombre">Conceptos Fundamentales</div>
+            <div class="herramienta-desc">8 términos</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">⚙️</span>
+          <div>
+            <div class="herramienta-nombre">Técnicos</div>
+            <div class="herramienta-desc">12 términos</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">🤖</span>
+          <div>
+            <div class="herramienta-nombre">Modelos y Arquitecturas</div>
+            <div class="herramienta-desc">10 términos</div>
+          </div>
+        </div>
+        <div class="herramienta-item">
+          <span class="herramienta-icono">⚖️</span>
+          <div>
+            <div class="herramienta-nombre">Ética e Impacto</div>
+            <div class="herramienta-desc">6 términos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h4>💡 Término del Día</h4>
+        <span class="dato-grande">RAG</span>
+        <span class="dato-desc"><strong>Retrieval-Augmented Generation:</strong> Técnica que permite a los modelos de IA acceder a información externa para generar respuestas más precisas y actualizadas.</span>
+      </div>
+
+    </aside>
+
+  </div><!-- fin .contenedor -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-marca">
+      🤖 IA Hoy
+      <span>Recurso educativo para estudiantes de desarrollo de software · El Salvador</span>
+    </div>
+    <nav class="footer-links">
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Recursos</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 IA Hoy · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
